@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QuickCalc</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>QuickCalc</h1>
+    <p>
+      This web application allows you to enter custom mathematical expressions
+      (e.g., <code>5 + 3 * 2</code>) and instantly get the result. It's designed
+      for quick calculations and supports basic arithmetic operations like
+      addition, subtraction, multiplication, and division. Ideal for students,
+      developers, or anyone who wants fast and accurate math results right in
+      their browser.
+    </p>
+    <div class="input-container">
+      <input
+        type="text"
+        id="expression"
+        required
+        placeholder="Enter an expression"
+      />
+      <div class="result" id="result"></div>
+      <button onclick="evaluateExpression()">Calculate</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

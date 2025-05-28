@@ -1,0 +1,65 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-image: url(".\\assets\\bg.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.input-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 28px;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+button {
+  padding: 17px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000099;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 25%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #000066;
+}
+
+.result {
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
