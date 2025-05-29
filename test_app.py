@@ -1,3 +1,14 @@
+"""
+Author: Anxhela Halili
+File: test_app.py
+Purpose: This file contains unit tests for the `eval_expr` function defined in app.py.
+         It ensures correct evaluation of a variety of mathematical expressions, 
+         including edge cases.
+Dependencies:
+    - unittest (built-in)
+    - app (local module)
+"""
+
 import unittest
 from app import eval_expr
 
