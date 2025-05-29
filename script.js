@@ -1,3 +1,13 @@
+/*
+Author: Anxhela Halili
+File: script.js
+Purpose: Sends user-entered mathematical expressions to the Flask backend via a POST request,
+         displays the evaluated result, and clears errors on input change.
+Dependencies:
+    - Fetch API (built-in in modern browsers)
+    - Flask backend running at http://127.0.0.1:5000/evaluate
+*/
+
 function evaluateExpression() {
   const expression = document.getElementById("expression").value.trim();
   const resultDiv = document.getElementById("result");
