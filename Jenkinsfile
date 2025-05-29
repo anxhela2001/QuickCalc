@@ -25,6 +25,7 @@ pipeline {
         stage('Deploy (Local)') {
             steps {
                 echo 'Running container...'
+                sh 'docker rm -f quickcalc-app || true'
                 sh 'docker run -d -p 5000:5000 --name quickcalc-app quickcalc-app'
             }
         }
