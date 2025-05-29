@@ -16,7 +16,7 @@ function evaluateExpression() {
 
   const payload = { expression };
 
-  fetch("http://127.0.0.1:5000/evaluate", {
+  fetch("http://localhost:5000/evaluate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
