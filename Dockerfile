@@ -1,3 +1,10 @@
+# Author: Anxhela Halili
+# File: Dockerfile
+# Purpose: Builds a Docker container for the Flask-based QuickCalc application.
+# Dependencies:
+#   - Python 3.11 base image
+#   - Flask and flask-cors Python packages
+
 FROM python:3.11-slim
 
 WORKDIR /app
