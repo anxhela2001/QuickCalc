@@ -32,7 +32,7 @@ function evaluateExpression() {
       }
     })
     .catch((error) => {
-      resultDiv.innerHTML = `<p style="color:red;">Error: ${error}</p>`;
+      resultDiv.innerHTML = `<p style="color:red;">${error}</p>`;
     });
 }
 
