@@ -25,7 +25,15 @@ pipeline {
         stage('Deploy (Local)') {
             steps {
                 echo 'Running container...'
-                sh 'docker rm -f quickcalc-app || true'
+                sh '''
+                    PORT=5000
+                    CID=$(docker ps -q --filter "publish=${PORT}")
+                    if [ ! -z "$CID" ]; then
+                      echo "Stopping container using port ${PORT} (ID: $CID)"
+                      docker stop $CID
+                      docker rm $CID
+                    fi
+                '''
                 sh 'docker run -d -p 5000:5000 --name quickcalc-app quickcalc-app'
             }
         }
