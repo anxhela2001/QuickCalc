@@ -1,3 +1,15 @@
+"""
+Author: Anxhela Halili
+File: app.py
+Purpose: This file defines a simple Flask web server that evaluates user-submitted 
+         mathematical expressions using Python's AST module for safe parsing.
+Dependencies:
+    - flask
+    - flask-cors
+    - ast (built-in)
+    - operator (built-in)
+"""
+
 from flask import Flask, request, jsonify
 import ast
 import operator
